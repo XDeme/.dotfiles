@@ -1,0 +1,11 @@
+Checks: 'modernize-*, cppcoreguidlines-*, -modernize-use-trailing-return-type,
+readability-identifier-naming'
+CheckOptions:
+  readability-identifier-naming.ClassCase: 'CamelCase'
+  readability-identifier-nameing.StructCase: 'CamelCase'
+  readability-identifier-naming.EnumCase: 'CamelCase'
+  readability-identifier-naming.EnumPrefix: 'E'
+  readability-identifier-naming.FunctionCase: 'lower_case'
+  readability-identifier-naming.PrivateMemberPrefix: 'm_'
+  
+
