@@ -20,8 +20,8 @@ AlignOperands: Align
 AlignTrailingComments: Always
 
 AllowAllArgumentsOnNextLine: true
-AllowAllParametersOfDeclarationOnNextLine: true
-AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
+AllowAllParametersOfDeclarationOnNextLine: false
+#AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
 
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: true
