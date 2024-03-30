@@ -8,13 +8,10 @@ cmp.setup({
     --- @type cmp.SourceConfig[]
     sources = {
         { name = "nvim_lsp",               priority = 4 },
-        -- { name = "luasnip",                priority = 3 },
-        { name = "path",                   priority = 2 },
-        -- { name = "buffer",                 priority = 1 },
+        { name = "luasnip",                priority = 3, max_item_count = 20 },
+        { name = "path",                   priority = 2, max_item_count = 10 },
+        { name = "buffer",                 priority = 1, max_item_count = 4 },
         { name = "nvim_lsp_signature_help" },
-    },
-    matching = {
-        disallow_fuzzy_matching = false,
     },
     snippet = {
         expand = function(args)
