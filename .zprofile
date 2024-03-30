@@ -13,7 +13,6 @@ export LC_MEASUREMENT=$LANG
 export LC_IDENTIFICATION=$LANG
 export LC_ALL=
 
-# Setup NVM
-source /usr/share/nvm/init-nvm.sh
-
-export NVIM_QT_RUNTIME_PATH=~/.local/share/nvim-qt/runtime/
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
