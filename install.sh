@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
-source "./install_scripts/utils.sh"
+source "./scripts/utils.sh"
 
-source "./install_scripts/core.sh"
-source "./install_scripts/terminal.sh"
-source "./install_scripts/programming.sh"
-
-sudo systemctl enable --now bluetooth.service
+source "./scripts/core.sh"
+source "./scripts/programming.sh"
+source "./scripts/terminal.sh"
+source "./scripts/extras.sh"
