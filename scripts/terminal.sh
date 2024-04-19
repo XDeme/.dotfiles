@@ -11,11 +11,3 @@ if [[ $distro = "arch" ]]; then
 
     chsh --shell /usr/bin/zsh
 fi
-
-cp .zprofile ~/.zprofile
-cp .zshenv ~/.zshenv
-cp .zshrc ~/.zshrc
-
-ln -sf .wezterm.lua ~/.wezterm.lua
-
-zsh

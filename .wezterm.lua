@@ -12,6 +12,7 @@ config.color_scheme = "Tokyo Night"
 config.hide_tab_bar_if_only_one_tab = true
 config.warn_about_missing_glyphs = false
 
+config.enable_scroll_bar = true
 config.window_close_confirmation = "NeverPrompt"
 config.window_background_opacity = 0.9
 config.window_padding = {

@@ -8,7 +8,7 @@ if [[ $distro = "arch" ]]; then
 
     sudo pacman -S --noconfirm --needed git tk github-cli
 
-    sudo pacman -S --noconfirm --needed jq curl wget nginx openssh
+    sudo pacman -S --noconfirm --needed curl wget nginx openssh
 
     sudo pacman -S --noconfirm --needed fcitx5 fcitx5-qt fcitx5-gtk fcitx5-mozc fcitx5-configtool
 

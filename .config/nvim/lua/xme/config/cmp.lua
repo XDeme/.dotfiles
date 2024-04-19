@@ -13,6 +13,13 @@ cmp.setup({
         { name = "buffer",                 priority = 1, max_item_count = 4 },
         { name = "nvim_lsp_signature_help" },
     },
+    confirmation = {
+        default_behavior = "insert",
+    },
+    matching = {
+        disallow_fuzzy_matching = true,
+        disallow_partial_fuzzy_matching = true,
+    },
     snippet = {
         expand = function(args)
             require("luasnip").lsp_expand(args.body)
@@ -51,7 +58,7 @@ cmp.setup({
             if icons.kind[item.kind] then
                 item.kind = icons.kind[item.kind]
             end
-            return item
+            return require("tailwindcss-colorizer-cmp").formatter(entry, item)
         end,
     },
     experimental = { ghost_text = true },
