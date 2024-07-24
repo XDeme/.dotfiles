@@ -12,7 +12,7 @@ SAVEHIST=20000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/fernando/.zshrc'
+zstyle :compinstall filename "$XDG_CONFIG_DIR/.zshrc"
 
 autoload -Uz compinit
 compinit
@@ -23,8 +23,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit $XDG_CONFIG_HOME/zsh/.p10k.zsh.
+[[ ! -f $XDG_CONFIG_HOME/zsh/.p10k.zsh ]] || source $XDG_CONFIG_HOME/zsh/.p10k.zsh
 
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word

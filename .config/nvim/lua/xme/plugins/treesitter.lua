@@ -2,6 +2,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         version = false,
+        dependencies = { "nvim-treesitter/playground" },
         build = ":TSUpdate",
         event = { "BufReadPost", "BufNewFile" },
         opts = {
@@ -37,31 +38,31 @@ return {
         end,
     },
 
-	{
-		"HiPhish/rainbow-delimiters.nvim",
-		init = function()
-			local r = require("rainbow-delimiters")
+    {
+        "HiPhish/rainbow-delimiters.nvim",
+        init = function()
+            local r = require("rainbow-delimiters")
 
-			vim.g.rainbow_delimiters = {
-				strategy = {
-					[""] = r.strategy["global"],
-					vim = r.strategy["local"],
-				},
-				query = {
-					[""] = "rainbow-delimiters",
-					lua = "rainbow-blocks",
-					tsx = "rainbow-parens",
-					javascript = "rainbow-delimiters-react",
-				},
-				highlight = {
-					"RainbowDelimiterRed",
-					"RainbowDelimiterYellow",
-					"RainbowDelimiterBlue",
-					"RainbowDelimiterViolet",
-					"RainbowDelimiterCyan",
-				},
-			}
-		end,
-	},
+            vim.g.rainbow_delimiters = {
+                strategy = {
+                    [""] = r.strategy["global"],
+                    vim = r.strategy["local"],
+                },
+                query = {
+                    [""] = "rainbow-delimiters",
+                    lua = "rainbow-blocks",
+                    tsx = "rainbow-parens",
+                    javascript = "rainbow-delimiters-react",
+                },
+                highlight = {
+                    "RainbowDelimiterRed",
+                    "RainbowDelimiterYellow",
+                    "RainbowDelimiterBlue",
+                    "RainbowDelimiterViolet",
+                    "RainbowDelimiterCyan",
+                },
+            }
+        end,
+    },
 
 }
